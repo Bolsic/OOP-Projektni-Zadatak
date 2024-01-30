@@ -1,7 +1,5 @@
 #include "GSPSystem.h"
-#include "LoadStations.h"
-#include "LoadLines.h"
-#include "MakeConnections.h"
+#include "LoadingCommands.h"
 #include "PrintInfo.h"
 #include "Exceptions.h"
 

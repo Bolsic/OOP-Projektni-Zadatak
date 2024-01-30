@@ -17,15 +17,13 @@ add_executable(Projektni_zadatak
         GSPSystem.cpp
         Command.h
         Command.cpp
-        LoadStations.h
-        LoadStations.cpp
-        LoadLines.h
-        LoadLines.cpp
-        MakeConnections.h
-        MakeConnections.cpp
         PrintInfo.h
         PrintInfo.cpp
         Exceptions.h
         source.cpp
+        WritingCommands.cpp
+        WritingCommands.h
+        LoadingCommands.cpp
+        LoadingCommands.h
 
 )
