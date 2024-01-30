@@ -4,7 +4,6 @@ project(Projektni_zadatak)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(Projektni_zadatak
-        main.cpp
         Route.h
         Station.h
         Station.cpp
@@ -26,5 +25,7 @@ add_executable(Projektni_zadatak
         MakeConnections.cpp
         PrintInfo.h
         PrintInfo.cpp
+        Exceptions.h
+        source.cpp
 
 )

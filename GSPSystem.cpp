@@ -3,11 +3,16 @@
 #include "LoadLines.h"
 #include "MakeConnections.h"
 #include "PrintInfo.h"
+#include "Exceptions.h"
 
 
 GSPSystem::GSPSystem() {
     loaded_=false;
     gsp_ = nullptr;
+}
+
+GSPSystem::~GSPSystem() {
+    delete gsp_;
 }
 
 void GSPSystem::loadingInterface() {
@@ -22,40 +27,39 @@ void GSPSystem::loadingInterface() {
 
         switch (command) {
             case 1: // LOAD
+                try {
+                    delete gsp_;
+                    gsp_ = new GSP;
 
-                // TODO: Delete old GSP object
-                gsp_ = new GSP;
+                    this->cmd = new LoadStations();
+                    this->cmd->command(gsp_);
+                    delete this->cmd;
 
-                cout << "Unesite lokacije fajlova za stajališta i linije" << endl;
-                cout << "Ili pritisnite ENTER za podrazumevane fajlove" << endl;
-                this->cmd = new LoadStations();
-                this->cmd->command(gsp_);
-                delete this->cmd;
+                    this->cmd = new LoadLines();
+                    this->cmd->command(gsp_);
+                    delete this->cmd;
 
-                this->cmd = new LoadLines();
-                this->cmd->command(gsp_);
-                delete this->cmd;
+                    // Making connections
+                    this->cmd = new MakeConnections();
+                    this->cmd->command(gsp_);
+                    delete this->cmd;
 
-                // Making connections
-                this->cmd = new MakeConnections();
-                this->cmd->command(gsp_);
-                delete this->cmd;
+                    cout << "Mreža gradskog prevoza je uspešno učitana!" << endl;
 
-                cout << "Mreža gradskog prevoza je uspešno učitana!" << endl;
-//                cout << "The data you loaded:" << endl;
-//                this->cmd = new PrintInfo();
-//                this->cmd->command(gsp_);
-//                delete this->cmd;
-
-                loaded_ = true;
-                run = false;
-                break;
-
+                    loaded_ = true;
+                    run = false;
+                    break;
+                }
+                catch (FileNotFount ex){
+                    cout << endl << "ERROR: " << ex.what() << endl << endl;
+                    break;
+                }
             case 0:
                 run = false;
 
-                //TODO: DELETE EVERYTHING
-
+                cout << "Doviđenja!" << endl;
+                run = false;
+                delete this;
                 break;
 
             default:
@@ -125,6 +129,8 @@ void GSPSystem::openTerminal() {
     if (loaded_) this->userInterface();
 
 }
+
+
 
 
 

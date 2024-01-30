@@ -35,7 +35,8 @@ int GSP::getNumOfImpStations() {
 
 GSP::~GSP() {
     for (auto pair : Stations_) delete pair.second;
-    for (auto pair : Lines_) delete pair.second;
-    delete this;
+    Stations_.clear();
+    for (const auto& pair : Lines_) delete pair.second;
+    Lines_.clear();
 }
 

@@ -12,6 +12,7 @@ class GSPSystem{
 public:
 
     GSPSystem();
+    ~GSPSystem();
     void openTerminal();
 
 private:
