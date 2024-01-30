@@ -26,11 +26,5 @@ add_executable(Projektni_zadatak
         MakeConnections.cpp
         PrintInfo.h
         PrintInfo.cpp
-        PrintStationInfo.h
-        PrintStationInfo.cpp
-        PrintLineInfo.h
-        PrintLineInfo.cpp
-        PrintRouteInterface.h
-        PrintRouteInterface.cpp
 
 )

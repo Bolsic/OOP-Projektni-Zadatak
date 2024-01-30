@@ -32,7 +32,7 @@ public:
     int getNumOfImpStations();
 
     friend class MakeConnections;
-    friend class PrintRouteInterface;
+    friend class WriteRouteInterface;
     friend class PrintInfo;
 
 private:

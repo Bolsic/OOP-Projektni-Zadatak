@@ -3,9 +3,7 @@
 #include "LoadLines.h"
 #include "MakeConnections.h"
 #include "PrintInfo.h"
-#include "PrintStationInfo.h"
-#include "PrintLineInfo.h"
-#include "PrintRouteInterface.h"
+
 
 GSPSystem::GSPSystem() {
     loaded_=false;
@@ -80,14 +78,14 @@ void GSPSystem::userInterface() {
 
         switch (command) {
             case 1:
-                this->cmd = new PrintStationInfo;
+                this->cmd = new WriteStationInfo;
                 this->cmd->command(gsp_);
                 delete this->cmd;
 
                 break;
 
             case 2:
-                this->cmd = new PrintLineInfo;
+                this->cmd = new WriteLineInfo;
                 this->cmd->command(gsp_);
                 delete this->cmd;
 
@@ -96,7 +94,7 @@ void GSPSystem::userInterface() {
             case 3:
 
                 // TODO: Putanja izmedju stajalista
-                this->cmd = new PrintRouteInterface();
+                this->cmd = new WriteRouteInterface();
                 this->cmd->command(gsp_);
                 delete this->cmd;
 

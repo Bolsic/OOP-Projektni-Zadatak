@@ -115,24 +115,6 @@ build CMakeFiles/Projektni_zadatak.dir/PrintInfo.cpp.o: CXX_COMPILER__Projektni_
   OBJECT_DIR = CMakeFiles/Projektni_zadatak.dir
   OBJECT_FILE_DIR = CMakeFiles/Projektni_zadatak.dir
 
-build CMakeFiles/Projektni_zadatak.dir/PrintStationInfo.cpp.o: CXX_COMPILER__Projektni_zadatak_unscanned_Debug /home/basic/FAKS/OOP/Projektni-zadatak/PrintStationInfo.cpp || cmake_object_order_depends_target_Projektni_zadatak
-  DEP_FILE = CMakeFiles/Projektni_zadatak.dir/PrintStationInfo.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/Projektni_zadatak.dir
-  OBJECT_FILE_DIR = CMakeFiles/Projektni_zadatak.dir
-
-build CMakeFiles/Projektni_zadatak.dir/PrintLineInfo.cpp.o: CXX_COMPILER__Projektni_zadatak_unscanned_Debug /home/basic/FAKS/OOP/Projektni-zadatak/PrintLineInfo.cpp || cmake_object_order_depends_target_Projektni_zadatak
-  DEP_FILE = CMakeFiles/Projektni_zadatak.dir/PrintLineInfo.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/Projektni_zadatak.dir
-  OBJECT_FILE_DIR = CMakeFiles/Projektni_zadatak.dir
-
-build CMakeFiles/Projektni_zadatak.dir/PrintRouteInterface.cpp.o: CXX_COMPILER__Projektni_zadatak_unscanned_Debug /home/basic/FAKS/OOP/Projektni-zadatak/PrintRouteInterface.cpp || cmake_object_order_depends_target_Projektni_zadatak
-  DEP_FILE = CMakeFiles/Projektni_zadatak.dir/PrintRouteInterface.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/Projektni_zadatak.dir
-  OBJECT_FILE_DIR = CMakeFiles/Projektni_zadatak.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Projektni_zadatak
@@ -141,7 +123,7 @@ build CMakeFiles/Projektni_zadatak.dir/PrintRouteInterface.cpp.o: CXX_COMPILER__
 #############################################
 # Link the executable Projektni_zadatak
 
-build Projektni_zadatak: CXX_EXECUTABLE_LINKER__Projektni_zadatak_Debug CMakeFiles/Projektni_zadatak.dir/main.cpp.o CMakeFiles/Projektni_zadatak.dir/Station.cpp.o CMakeFiles/Projektni_zadatak.dir/Line.cpp.o CMakeFiles/Projektni_zadatak.dir/FindRoute.cpp.o CMakeFiles/Projektni_zadatak.dir/GSP.cpp.o CMakeFiles/Projektni_zadatak.dir/GSPSystem.cpp.o CMakeFiles/Projektni_zadatak.dir/Command.cpp.o CMakeFiles/Projektni_zadatak.dir/LoadStations.cpp.o CMakeFiles/Projektni_zadatak.dir/LoadLines.cpp.o CMakeFiles/Projektni_zadatak.dir/MakeConnections.cpp.o CMakeFiles/Projektni_zadatak.dir/PrintInfo.cpp.o CMakeFiles/Projektni_zadatak.dir/PrintStationInfo.cpp.o CMakeFiles/Projektni_zadatak.dir/PrintLineInfo.cpp.o CMakeFiles/Projektni_zadatak.dir/PrintRouteInterface.cpp.o
+build Projektni_zadatak: CXX_EXECUTABLE_LINKER__Projektni_zadatak_Debug CMakeFiles/Projektni_zadatak.dir/main.cpp.o CMakeFiles/Projektni_zadatak.dir/Station.cpp.o CMakeFiles/Projektni_zadatak.dir/Line.cpp.o CMakeFiles/Projektni_zadatak.dir/FindRoute.cpp.o CMakeFiles/Projektni_zadatak.dir/GSP.cpp.o CMakeFiles/Projektni_zadatak.dir/GSPSystem.cpp.o CMakeFiles/Projektni_zadatak.dir/Command.cpp.o CMakeFiles/Projektni_zadatak.dir/LoadStations.cpp.o CMakeFiles/Projektni_zadatak.dir/LoadLines.cpp.o CMakeFiles/Projektni_zadatak.dir/MakeConnections.cpp.o CMakeFiles/Projektni_zadatak.dir/PrintInfo.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Projektni_zadatak.dir
   POST_BUILD = :
