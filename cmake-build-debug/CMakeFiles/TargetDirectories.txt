@@ -1,0 +1,3 @@
+/home/basic/FAKS/OOP/Projektni-zadatak/cmake-build-debug/CMakeFiles/Projektni_zadatak.dir
+/home/basic/FAKS/OOP/Projektni-zadatak/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/basic/FAKS/OOP/Projektni-zadatak/cmake-build-debug/CMakeFiles/rebuild_cache.dir
