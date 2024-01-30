@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/basic/FAKS/OOP/Projektni-zadatak/cmake-build-debug"
+			"value" : "/home/basic/Documents/GitHub/OOP-Projektni-Zadatak/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -151,10 +151,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "UNINITIALIZED",
+			"type" : "STRING",
 			"value" : "/usr/bin/g++"
 		},
 		{
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/basic/FAKS/OOP/Projektni-zadatak/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/basic/Documents/GitHub/OOP-Projektni-Zadatak/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/basic/FAKS/OOP/Projektni-zadatak"
+			"value" : "/home/basic/Documents/GitHub/OOP-Projektni-Zadatak"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/basic/FAKS/OOP/Projektni-zadatak/cmake-build-debug"
+			"value" : "/home/basic/Documents/GitHub/OOP-Projektni-Zadatak/cmake-build-debug"
 		},
 		{
 			"name" : "Projektni_zadatak_IS_TOP_LEVEL",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/basic/FAKS/OOP/Projektni-zadatak"
+			"value" : "/home/basic/Documents/GitHub/OOP-Projektni-Zadatak"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

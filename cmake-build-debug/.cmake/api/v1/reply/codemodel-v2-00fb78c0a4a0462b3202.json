@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/basic/FAKS/OOP/Projektni-zadatak/cmake-build-debug",
-		"source" : "/home/basic/FAKS/OOP/Projektni-zadatak"
+		"build" : "/home/basic/Documents/GitHub/OOP-Projektni-Zadatak/cmake-build-debug",
+		"source" : "/home/basic/Documents/GitHub/OOP-Projektni-Zadatak"
 	},
 	"version" : 
 	{

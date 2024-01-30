@@ -116,7 +116,7 @@ vector<Route*> Station::findRoutesToStation(Station* destination) {
             for(const auto& lineName : neighbor.second){
                 // Check if the route already went through the station to avoid circles
                 if (!didTheRoutePassHere(currentRoute, nextStation)){
-                    Route* newRoute = new Route(*currentRoute);
+                    auto* newRoute = new Route(*currentRoute);
                     //newRoute = &newRouteObj;
                     newRoute->addStation(nextStation, lineName, nextStation->isImportant());
                     routesQueue.push(newRoute);

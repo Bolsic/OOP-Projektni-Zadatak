@@ -13,6 +13,7 @@ class Line {
 public:
 
     explicit Line(string name){name_ = std::move(name);};
+    ~Line() = default;
     void addStation(Station* station){Stations_.push_back(station);};
     void printInfo();
     string getName() {return name_;};

@@ -2,15 +2,10 @@
 2	1571	1706573362160556408	CMakeFiles/Projektni_zadatak.dir/GSPSystem.cpp.o	42f7635a8549e552
 1	1296	1706572395904880276	CMakeFiles/Projektni_zadatak.dir/Station.cpp.o	8056c59d1f477a57
 1960	2092	1706573362680578408	Projektni_zadatak	604d300957a4ad1a
-4	1282	1706573361873877607	CMakeFiles/Projektni_zadatak.dir/PrintStationInfo.cpp.o	deb065bebcf4404d
 3	1374	1706573361963881419	CMakeFiles/Projektni_zadatak.dir/LoadLines.cpp.o	9f95caefe339d3fe
-986	1609	1706547113644051817	CMakeFiles/Projektni_zadatak.dir/PrintRoute.cpp.o	120e282f342d61d
-0	39	1706622971022714023	build.ninja	f968cacd78ca5f33
+0	39	1706623233122888605	build.ninja	f968cacd78ca5f33
 2	1104	1706573361693869983	CMakeFiles/Projektni_zadatak.dir/Command.cpp.o	b7c21467500021ef
 1	1398	1706573361987215741	CMakeFiles/Projektni_zadatak.dir/FindRoute.cpp.o	da2a42113e18d79b
-1104	1960	1706573362550572908	CMakeFiles/Projektni_zadatak.dir/PrintLineInfo.cpp.o	6435d6ec3dc974c9
-1	548	1706547138437621408	CMakeFiles/Projektni_zadatak.dir/FindShortestRoute.cpp.o	19d26ae6e838763a
-1219	1904	1706573362497237318	CMakeFiles/Projektni_zadatak.dir/PrintRouteInterface.cpp.o	912d1cf4438beb8d
 2	1439	1706573362030550908	CMakeFiles/Projektni_zadatak.dir/GSP.cpp.o	8f42b0a350928f4e
 3	1103	1706563020155402882	CMakeFiles/Projektni_zadatak.dir/Line.cpp.o	ebd8645c9c78353d
 3	1424	1706573362013883536	CMakeFiles/Projektni_zadatak.dir/MakeConnections.cpp.o	5b10312de9468d6e

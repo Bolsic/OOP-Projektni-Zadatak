@@ -17,6 +17,7 @@ class GSP {
 public:
 
     GSP()= default;
+    ~GSP();
     void addStation(int id, const string& name, bool important);
     Line* addLine(const string& name);
     Station* getStation(int id) {return Stations_[id];};

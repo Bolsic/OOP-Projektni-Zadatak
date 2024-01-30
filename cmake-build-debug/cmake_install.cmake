@@ -1,4 +1,4 @@
-# Install script for directory: /home/basic/FAKS/OOP/Projektni-zadatak
+# Install script for directory: /home/basic/Documents/GitHub/OOP-Projektni-Zadatak
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/basic/FAKS/OOP/Projektni-zadatak/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/basic/Documents/GitHub/OOP-Projektni-Zadatak/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

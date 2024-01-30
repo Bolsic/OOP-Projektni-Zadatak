@@ -19,6 +19,7 @@ class Station {
 public:
 
     Station(int idx, string name, bool important);
+    ~Station() = default;
     int getIdx() const {return idx_;};
     string getName() {return name_;};
     bool isImportant() const{return important_;};
