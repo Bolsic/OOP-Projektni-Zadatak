@@ -31,6 +31,9 @@ void GSPSystem::loadingInterface() {
                     delete gsp_;
                     gsp_ = new GSP;
 
+                    cout << "Unesite lokacije fajlova za stajališta i linije" << endl;
+                    cout << "Ili pritisnite ENTER dvaput za podrazumevane fajlove" << endl;
+
                     this->cmd = new LoadStations();
                     this->cmd->command(gsp_);
                     delete this->cmd;
@@ -54,9 +57,8 @@ void GSPSystem::loadingInterface() {
                     cout << endl << "ERROR: " << ex.what() << endl << endl;
                     break;
                 }
-            case 0:
-                run = false;
 
+            case 0:
                 cout << "Doviđenja!" << endl;
                 run = false;
                 delete this;
@@ -97,7 +99,6 @@ void GSPSystem::userInterface() {
 
             case 3:
 
-                // TODO: Putanja izmedju stajalista
                 this->cmd = new WriteRouteInterface();
                 this->cmd->command(gsp_);
                 delete this->cmd;
@@ -105,9 +106,9 @@ void GSPSystem::userInterface() {
                 break;
 
             case 0:
+                cout << "Doviđenja!" << endl;
                 run = false;
-
-                // TODO: DELETE EVERYTHING
+                delete this;
                 break;
 
             default:
@@ -125,8 +126,8 @@ void GSPSystem::openTerminal() {
          << "Molimo Vas, odaberite opciju:" << endl << endl;
 
     this->loadingInterface();
-
-    if (loaded_) this->userInterface();
+    if (!loaded_) throw FilesNotLoaded();
+    else this->userInterface();
 
 }
 

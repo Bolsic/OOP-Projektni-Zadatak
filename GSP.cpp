@@ -1,4 +1,5 @@
 #include "GSP.h"
+#include "Exceptions.h"
 
 void GSP::addStation(int id, const string& name, bool important) {
 
@@ -38,5 +39,15 @@ GSP::~GSP() {
     Stations_.clear();
     for (const auto& pair : Lines_) delete pair.second;
     Lines_.clear();
+}
+
+void GSP::printStationInfo(int id) {
+    if (Stations_[id] == nullptr) throw StationDoesntExist();
+    Stations_[id]->printInfo();
+}
+
+void GSP::printLineInfo(const string &name) {
+    if (Lines_[name] == nullptr) throw LineDoesntExist();
+    Lines_[name]->printInfo();
 }
 

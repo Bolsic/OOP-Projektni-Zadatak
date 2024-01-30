@@ -5,8 +5,6 @@
 using namespace std;
 
 void LoadStations::command(GSP *gsp) {
-    cout << "Unesite lokacije fajlova za stajališta i linije" << endl;
-    cout << "Ili pritisnite ENTER za podrazumevane fajlove" << endl;
 
     cin.ignore();
 

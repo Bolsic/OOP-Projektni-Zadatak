@@ -1,18 +1,23 @@
 #include "LoadLines.h"
 #include <fstream>
 #include <sstream>
+#include "Exceptions.h"
 
 using namespace std;
 
 void LoadLines::command(GSP *gsp) {
+    cin.ignore();
+
     string filepath;
     getline(cin, filepath);
     if (filepath.empty()) filepath = this->defaultFileLocation;
-    //filepath = "../test/" + filepath;
+
     fstream file;
     file.open(filepath, ios::in);
 
-    // TODO: Exception for FileNotFound
+    if (!file.is_open()) {
+        throw FileNotFount();
+    }
 
     string inputLine;
     while(getline(file, inputLine)){
