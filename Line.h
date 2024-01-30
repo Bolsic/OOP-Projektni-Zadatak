@@ -15,7 +15,7 @@ public:
     explicit Line(string name){name_ = std::move(name);};
     ~Line() = default;
     void addStation(Station* station){Stations_.push_back(station);};
-    void printInfo();
+    void writeInfo(const string& fileLocation);
     string getName() {return name_;};
     vector<Station*> getStations() {return Stations_;};
 

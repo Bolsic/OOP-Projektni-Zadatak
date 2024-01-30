@@ -1,27 +1,22 @@
 #include "Line.h"
+#include <iostream>
+#include <fstream>
 
-void Line::printInfo() {
-    this->printName();
-    cout << " ";
-    this->printRange();
-    cout << endl;
-    this->printStations();
-}
+void Line::writeInfo(const string& fileLocation) {
+    ofstream file(fileLocation);
 
-void Line::printRange() {
-    Stations_[0]->printName();
-    cout << "->";
-    Stations_[size(Stations_) - 1]->printName();
-}
+    file << name_ << " ";
 
-void Line::printStations() {
+    file << Stations_.front()->getName();
+    file << "->";
+    file << Stations_.back()->getName() << endl;
+
     for (auto station : Stations_){
-        station->printIdx();
-        cout << " ";
-        station->printName();
-        if (station->important_) cout << " [!]";
-        cout << endl;
+        file << station->getIdx() << " " << station->getName();
+        if (station->important_) file << " [!]";
+        file << endl;
     }
 }
+
 
 

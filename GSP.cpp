@@ -41,13 +41,13 @@ GSP::~GSP() {
     Lines_.clear();
 }
 
-void GSP::printStationInfo(int id) {
+void GSP::writeStationInfo(int id, const string& fileLocation) {
     if (Stations_[id] == nullptr) throw StationDoesntExist();
-    Stations_[id]->printInfo();
+    Stations_[id]->writeInfo(fileLocation);
 }
 
-void GSP::printLineInfo(const string &name) {
+void GSP::writeLineInfo(const string &name, const string& fileLocation) {
     if (Lines_[name] == nullptr) throw LineDoesntExist();
-    Lines_[name]->printInfo();
+    Lines_[name]->writeInfo(fileLocation);
 }
 

@@ -1,6 +1,5 @@
 #include "GSPSystem.h"
 #include "LoadingCommands.h"
-#include "PrintInfo.h"
 #include "Exceptions.h"
 
 
@@ -128,12 +127,3 @@ void GSPSystem::openTerminal() {
     else this->userInterface();
 
 }
-
-
-
-
-
-
-
-
-

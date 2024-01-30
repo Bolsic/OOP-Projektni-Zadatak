@@ -28,8 +28,8 @@ public:
     };
 
     void printAllRoutesToFrom(int start, int destination);
-    void printStationInfo(int id);
-    void printLineInfo(const string& name);
+    void writeStationInfo(int id, const string& fileLocation);
+    void writeLineInfo(const string& name, const string& fileLocation);
     int getNumOfImpStations();
 
     friend class MakeConnections;

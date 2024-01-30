@@ -23,7 +23,8 @@ public:
     int getIdx() const {return idx_;};
     string getName() {return name_;};
     bool isImportant() const{return important_;};
-    void printInfo();
+
+    void writeInfo(const string& fileLocation);
 
     void addConnection(Station* station, Line* line);
     vector<Route*> findRoutesToStation(Station* destination);

@@ -1,35 +1,48 @@
 #include "WritingCommands.h"
+#include <iostream>
+#include <fstream>
 
 
 void WriteLineInfo::command(GSP *gsp) {
     cout << "Unesite šifru stajališta:" << endl;
     string name;
     cin >> name;
-    gsp->printLineInfo(name);
+    string fileLocation = "../izlaz/linija_" + name+ ".txt";
+
+    gsp->writeLineInfo(name, fileLocation);
     cout << endl;
 }
 
 
 void WriteStationInfo::command(GSP* gsp) {
     cout << "Unesite šifru stajališta:" << endl;
-    int id;
+    string id;
     cin >> id;
-    gsp->printStationInfo(id);
+    string fileLocation = "../izlaz/stajaliste_" + id + ".txt";
+
+    gsp->writeStationInfo(stoi(id), fileLocation);
     cout << endl << endl;
 }
 
 
 void WriteRouteInterface::writeRoute(Route *route) {
-    cout << "->" << route->lines_[1] << endl;
+    string startId = to_string(route->stations_.front()->getIdx());
+    string endId = to_string(route->stations_.front()->getIdx());
+
+    string fileLocation = "../izlaz/putanja_" + startId + "_" + endId + ".txt";
+    ofstream file(fileLocation);
+
+    file << "->" << route->lines_[1] << endl;
     string currLine = route->lines_[1];
+
     for(int idx = 0; idx < route->numOfStations; idx++){
         if ((route->lines_[idx] != currLine) && (route->lines_[idx] != "none")){
-            cout << endl << currLine << "->" << route->lines_[idx] << endl;
-            cout << route->stations_[idx-1]->getIdx();
+            file << endl << currLine << "->" << route->lines_[idx] << endl;
+            file << route->stations_[idx-1]->getIdx();
             currLine = route->lines_[idx];
         }
-        if (idx != 0) cout << " ";
-        cout << route->stations_[idx]->getIdx();
+        if (idx != 0) file << " ";
+        file << route->stations_[idx]->getIdx();
     }
 
 }

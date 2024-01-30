@@ -3,6 +3,8 @@
 
 #include <utility>
 #include <algorithm>
+#include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -13,34 +15,28 @@ Station::Station(int idx, string name, bool important) {
 }
 
 
-void Station::printInfo() {
-    this->printIdx();
-    cout << " ";
-    this->printName();
-    cout << " [";
-    this->printLines();
-    cout << "] ";
-    cout << "{! ";
-    this->printAdjacentImportantStations();
-    cout << "!}";
-}
+void Station::writeInfo(const string& fileLocation) {
+    ofstream file(fileLocation);
 
+    file << idx_ << " " << name_ << " [";
 
-void Station::printLines() {
     for (auto it = Lines_.begin(); it != Lines_.end(); it = next(it, 1)) {
-        cout << (*it)->getName();
-        if (next(it, 1) != Lines_.end()) cout << " ";
+        file << (*it)->getName();
+        if (next(it, 1) != Lines_.end()) file << " ";
     }
-}
 
-
-void Station::printAdjacentImportantStations() {
+    file << "] " << "{! ";
 
     for (const auto &pair: importantConnections_) {
-        pair.first->printIdx();
-        cout << " ";
+        file << pair.first->getIdx();
+        file << " ";
     }
+
+    file << "!}";
 }
+
+
+
 
 
 void Station::addConnection(Station* station, Line* line) {
