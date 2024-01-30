@@ -4,6 +4,7 @@
 
 
 void WriteLineInfo::command(GSP *gsp) {
+
     cout << "Unesite šifru stajališta:" << endl;
     string name;
     cin >> name;
@@ -15,6 +16,7 @@ void WriteLineInfo::command(GSP *gsp) {
 
 
 void WriteStationInfo::command(GSP* gsp) {
+
     cout << "Unesite šifru stajališta:" << endl;
     string id;
     cin >> id;
@@ -26,6 +28,7 @@ void WriteStationInfo::command(GSP* gsp) {
 
 
 void WriteRouteInterface::writeRoute(Route *route) {
+
     string startId = to_string(route->stations_.front()->getIdx());
     string endId = to_string(route->stations_.back()->getIdx());
 
@@ -41,6 +44,7 @@ void WriteRouteInterface::writeRoute(Route *route) {
             file << route->stations_[idx-1]->getIdx();
             currLine = route->lines_[idx];
         }
+
         if (idx != 0) file << " ";
         file << route->stations_[idx]->getIdx();
     }
@@ -49,10 +53,12 @@ void WriteRouteInterface::writeRoute(Route *route) {
 
 
 void WriteRouteInterface::command(GSP* gsp) {
+
     cout << "Kakvu putanju želite naći?" << endl;
     cout << "   1. Najkraću putanju (najmanje stajališta)" << endl;
     cout << "   2. Putanju sa najmanje presedanja" << endl;
     cout << "   3. Turističku putanju (obilazi svr važne gradske destinacije)" << endl;
+
     int choice;
     cin >> choice;
 
