@@ -16,7 +16,6 @@ add_executable(Projektni_zadatak
         GSPSystem.h
         GSPSystem.cpp
         Command.h
-        Command.cpp
         Exceptions.h
         source.cpp
         WritingCommands.cpp

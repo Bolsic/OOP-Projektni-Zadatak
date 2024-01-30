@@ -27,7 +27,7 @@ void WriteStationInfo::command(GSP* gsp) {
 
 void WriteRouteInterface::writeRoute(Route *route) {
     string startId = to_string(route->stations_.front()->getIdx());
-    string endId = to_string(route->stations_.front()->getIdx());
+    string endId = to_string(route->stations_.back()->getIdx());
 
     string fileLocation = "../izlaz/putanja_" + startId + "_" + endId + ".txt";
     ofstream file(fileLocation);

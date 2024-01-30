@@ -79,12 +79,6 @@ build CMakeFiles/Projektni_zadatak.dir/GSPSystem.cpp.o: CXX_COMPILER__Projektni_
   OBJECT_DIR = CMakeFiles/Projektni_zadatak.dir
   OBJECT_FILE_DIR = CMakeFiles/Projektni_zadatak.dir
 
-build CMakeFiles/Projektni_zadatak.dir/Command.cpp.o: CXX_COMPILER__Projektni_zadatak_unscanned_Debug /home/basic/Documents/GitHub/OOP-Projektni-Zadatak/Command.cpp || cmake_object_order_depends_target_Projektni_zadatak
-  DEP_FILE = CMakeFiles/Projektni_zadatak.dir/Command.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/Projektni_zadatak.dir
-  OBJECT_FILE_DIR = CMakeFiles/Projektni_zadatak.dir
-
 build CMakeFiles/Projektni_zadatak.dir/source.cpp.o: CXX_COMPILER__Projektni_zadatak_unscanned_Debug /home/basic/Documents/GitHub/OOP-Projektni-Zadatak/source.cpp || cmake_object_order_depends_target_Projektni_zadatak
   DEP_FILE = CMakeFiles/Projektni_zadatak.dir/source.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
@@ -111,7 +105,7 @@ build CMakeFiles/Projektni_zadatak.dir/LoadingCommands.cpp.o: CXX_COMPILER__Proj
 #############################################
 # Link the executable Projektni_zadatak
 
-build Projektni_zadatak: CXX_EXECUTABLE_LINKER__Projektni_zadatak_Debug CMakeFiles/Projektni_zadatak.dir/Station.cpp.o CMakeFiles/Projektni_zadatak.dir/Line.cpp.o CMakeFiles/Projektni_zadatak.dir/FindRoute.cpp.o CMakeFiles/Projektni_zadatak.dir/GSP.cpp.o CMakeFiles/Projektni_zadatak.dir/GSPSystem.cpp.o CMakeFiles/Projektni_zadatak.dir/Command.cpp.o CMakeFiles/Projektni_zadatak.dir/source.cpp.o CMakeFiles/Projektni_zadatak.dir/WritingCommands.cpp.o CMakeFiles/Projektni_zadatak.dir/LoadingCommands.cpp.o
+build Projektni_zadatak: CXX_EXECUTABLE_LINKER__Projektni_zadatak_Debug CMakeFiles/Projektni_zadatak.dir/Station.cpp.o CMakeFiles/Projektni_zadatak.dir/Line.cpp.o CMakeFiles/Projektni_zadatak.dir/FindRoute.cpp.o CMakeFiles/Projektni_zadatak.dir/GSP.cpp.o CMakeFiles/Projektni_zadatak.dir/GSPSystem.cpp.o CMakeFiles/Projektni_zadatak.dir/source.cpp.o CMakeFiles/Projektni_zadatak.dir/WritingCommands.cpp.o CMakeFiles/Projektni_zadatak.dir/LoadingCommands.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Projektni_zadatak.dir
   POST_BUILD = :

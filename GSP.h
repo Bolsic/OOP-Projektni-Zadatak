@@ -16,7 +16,7 @@ using namespace std;
 class GSP {
 public:
 
-    GSP()= default;
+    GSP() = default;
     ~GSP();
     void addStation(int id, const string& name, bool important);
     Line* addLine(const string& name);
@@ -31,6 +31,8 @@ public:
     void writeStationInfo(int id, const string& fileLocation);
     void writeLineInfo(const string& name, const string& fileLocation);
     int getNumOfImpStations();
+
+    bool defaultFiles = false;
 
     friend class MakeConnections;
     friend class WriteRouteInterface;

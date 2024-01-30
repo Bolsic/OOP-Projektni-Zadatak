@@ -7,6 +7,7 @@
 class Command {
 public:
     virtual void command(GSP* gsp) = 0;
+    virtual ~Command() = default;
 };
 
 
